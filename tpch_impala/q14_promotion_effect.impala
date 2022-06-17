@@ -1,5 +1,4 @@
 -- the query
-insert overwrite table q14_promotion_effect
 select 
   100.00 * sum(case
                when p_type like 'PROMO%'

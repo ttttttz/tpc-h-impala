@@ -1,5 +1,4 @@
 -- the query
-insert overwrite table q10_returned_item
 select 
   c_custkey, c_name, sum(l_extendedprice * (1 - l_discount)) as revenue, 
   cast(cast(c_acctbal*1000 as int)/1000 as string), n_name, c_address, c_phone, c_comment

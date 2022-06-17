@@ -1,5 +1,4 @@
 -- the query
-INSERT OVERWRITE TABLE q4_order_priority_tmp 
 select 
   DISTINCT l_orderkey 
 from 

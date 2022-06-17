@@ -1,5 +1,4 @@
 -- the query
-insert overwrite table revenue
 select 
   l_suppkey as supplier_no, sum(l_extendedprice * (1 - l_discount)) as total_revenue
 from 

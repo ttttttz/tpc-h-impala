@@ -1,5 +1,4 @@
 -- the query
-insert overwrite table q18_tmp
 select 
   l_orderkey, sum(l_quantity) as t_sum_quantity
 from 

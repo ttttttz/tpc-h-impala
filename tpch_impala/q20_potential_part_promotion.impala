@@ -1,5 +1,4 @@
 -- the query
-insert overwrite table q20_tmp1
 select distinct p_partkey
 from
   part 

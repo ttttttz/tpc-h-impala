@@ -1,6 +1,5 @@
 -- the query
-insert overwrite table q2_minimum_cost_supplier_tmp1 
-select 
+select
   s.s_acctbal, s.s_name, n.n_name, p.p_partkey, ps.ps_supplycost, p.p_mfgr, s.s_address, s.s_phone, s.s_comment 
 from 
   nation n join region r 

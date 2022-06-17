@@ -1,5 +1,4 @@
 -- the query
-insert overwrite table q7_volume_shipping_tmp
 select 
   * 
 from
@@ -8,7 +7,7 @@ from
       n1.n_name as supp_nation, n2.n_name as cust_nation, n1.n_nationkey as s_nationkey,      
       n2.n_nationkey as c_nationkey
 from 
-  nation n1 join nation n2 
+  nation n1 join nation n2
   on 
     n1.n_regionkey = n2.n_regionkey
     and

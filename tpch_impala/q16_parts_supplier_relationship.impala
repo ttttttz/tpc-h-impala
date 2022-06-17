@@ -1,6 +1,5 @@
 -- the query
-insert overwrite table supplier_tmp
-select 
+select
   s_suppkey
 from 
   supplier

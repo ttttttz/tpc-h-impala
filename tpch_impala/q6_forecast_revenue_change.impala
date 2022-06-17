@@ -1,6 +1,5 @@
 -- the query
-insert overwrite table q6_forecast_revenue_change 
-select 
+select
   sum(l_extendedprice*l_discount) as revenue
 from 
   lineitem

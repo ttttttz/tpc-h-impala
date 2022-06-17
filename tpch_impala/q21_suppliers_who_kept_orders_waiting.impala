@@ -1,5 +1,4 @@
 -- the query
-insert overwrite table q21_tmp1
 select
   l_orderkey, cast(count(distinct l_suppkey) as int), max(l_suppkey) as max_suppkey
 from

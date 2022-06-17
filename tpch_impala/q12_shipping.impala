@@ -1,6 +1,5 @@
 -- the query
-insert overwrite table q12_shipping
-select 
+select
   l_shipmode,
   sum(case
     when o_orderpriority ='1-URGENT'
